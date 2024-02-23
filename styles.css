@@ -3,7 +3,18 @@
 *::before {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Light.ttf');
+}
+
+body {
+    font-family: 'roboto';
     box-sizing: border-box;
+    font-weight: 700;
 }
 
 html {
@@ -24,8 +35,7 @@ ol {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-color: #f7f7f7;
 }
 
@@ -38,18 +48,19 @@ ol {
 .menu__item--link:link {
     display: inline-block;
     padding: 1rem;
-    background-image: linear-gradient(143deg, orange 0%, crimson 50%, white 50%);
+    background-image: linear-gradient(120deg, orange 0%, crimson 50%, white 50%);
     background-size: 220%;
     transition: all 0.8s ease;
-    border-radius: 10px;
-    box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.4);
+
     transform: translateY(-3px);
+    text-decoration: none;
+    color: #333;
 }
 
 .menu__item--link:active,
 .menu__item--link:hover {
     transition: all .8s ease;
-    background-position:100%;
+    background-position: 100%;
     transform: translateX(1rem);
-    box-shadow: .5rem 1rem .5rem rgba(0, 0, 0, 0.4);
+    color: black;
 }
